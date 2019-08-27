@@ -1,8 +1,5 @@
 //http://newwestcharter.org/high-school-daily-bell-schedule/
 let playBells = false
-document.getElementById("bell-toggle").textContent = "no bells";
-
-
 let todayMinutes = 0;
 let startMinutes = 440;
 let timeMode = 0;
@@ -703,6 +700,9 @@ function update(bell = true) {
 // }, 2000);
 function setup(el) {
   el.onclick = null; //stops the function from running on button click
+  document.getElementById("bell-toggle").textContent = "no bells";
+  document.getElementById("instructions").style.display = "none";
+
   //run once at start, then run when the next minute begins, then run every minute.
   schedule.setCurrentByDate();
   update(false);
