@@ -445,7 +445,7 @@ function nameOfSeasonAsString(MonthIndex) {
 }
 
 function findCurrentPeriod(b) {
-  let period = 0;
+  // let period = 0;
   for (let i = 0, len = b.length; i < len; ++i) {
     if (todayMinutes >= b[i].start && todayMinutes < b[i].start + b[i].long) {
       return i;
@@ -677,10 +677,11 @@ function update(bell = true) {
   drawCurrentPeriod(schedule[schedule.current]);
   moveSVGPeriods(schedule[schedule.current]);
 
-
+  // bellSound();
   //ring bell on new period
   for (let i = 0, len = schedule[schedule.current].length; i < len; ++i) {
-    if (schedule[schedule.current][i].start === todayMinutes) {
+    // console.log(todayMinutes, schedule[schedule.current][i].start)
+    if (schedule[schedule.current][i].start = todayMinutes) {
       if (bell && playBells) bellSound();
     }
   }
