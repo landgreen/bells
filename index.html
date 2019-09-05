@@ -10,10 +10,7 @@
 	<link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
 </head>
 
-<body onclick="setup(this)">
-	<h1 id="instructions" style="text-align: center;">
-		Click to begin bells
-	</h1>
+<body>
 	<!-- <canvas id="canvas" width='500' height='500'></canvas> -->
 	<svg viewBox="0 0 200 100">
 		<!-- <g id='analogClock' onclick="toggleMode()" fill='none' stroke='#333' stroke-width="0.3" stroke-linecap="round" transform="translate(100,32) scale(0.9)">
@@ -97,7 +94,7 @@
 		</g>
 		<!-- target="_blank" href='http://newwestcharter.org/high-school-daily-bell-schedule/' -->
 		<text id="schedule" text-anchor="start" alignment-baseline="baseline" font-weight='300' font-size='3px' onclick='schedule.cycleCurrent()' x="0.3" y="99.5"></text>
-		<text id="bell-toggle" text-anchor="end" alignment-baseline="baseline" font-weight='300' font-size='3px' onclick='bellToggle()' x="199.7" y="99.5"></text>
+		<!-- <text id="bell-toggle" text-anchor="end" alignment-baseline="baseline" font-weight='300' font-size='3px' onclick='bellToggle()' x="199.7" y="99.5"></text> -->
 	</svg>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
 	<script src="index.js"></script>

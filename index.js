@@ -668,7 +668,7 @@ function bellToggle() {
 
 //**************************************************
 //main repeating loop
-function update(bell = true) {
+function update() {
   date = new Date();
   todayMinutes = date.getHours() * 60 + date.getMinutes();
   // todayMinutes = Math.round(450 + Math.random() * 420); //set to random time during class
@@ -679,12 +679,12 @@ function update(bell = true) {
 
   // bellSound();
   //ring bell on new period
-  for (let i = 0, len = schedule[schedule.current].length; i < len; ++i) {
-    // console.log(todayMinutes, schedule[schedule.current][i].start)
-    if (schedule[schedule.current][i].start = todayMinutes) {
-      if (bell && playBells) bellSound();
-    }
-  }
+  // for (let i = 0, len = schedule[schedule.current].length; i < len; ++i) {
+  //   // console.log(todayMinutes, schedule[schedule.current][i].start)
+  //   if (schedule[schedule.current][i].start = todayMinutes) {
+  //     if (bell && playBells) bellSound();
+  //   }
+  // }
 }
 
 // let audioCtx = new(window.AudioContext || window.webkitAudioContext)();
@@ -699,14 +699,13 @@ function update(bell = true) {
 // setTimeout(() => {
 //   oscillator1.stop();
 // }, 2000);
-function setup(el) {
-  el.onclick = null; //stops the function from running on button click
-  document.getElementById("bell-toggle").textContent = "no bells";
-  document.getElementById("instructions").style.display = "none";
 
+setup();
+
+function setup() {
   //run once at start, then run when the next minute begins, then run every minute.
   schedule.setCurrentByDate();
-  update(false);
+  update();
   noWeather();
   slowUpdate();
   drawDigitalClock();
@@ -721,7 +720,7 @@ function setup(el) {
   }, (60 - date.getSeconds()) * 1000);
 
   window.addEventListener("focus", function () {
-    update(false);
+    update();
   });
 
   const cycle = function () {
