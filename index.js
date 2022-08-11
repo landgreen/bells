@@ -38,105 +38,91 @@ const schedule = {
   },
   regular: [{
       start: 0,
-      long: 7 * 60 + 30,
+      long: 8 * 60 + 30,
       name: "",
       showName: false,
       fill: color.passing
     },
     {
-      start: 7 * 60 + 30,
+      start: 8 * 60 + 30,
       long: 60,
       name: "P1",
       showName: true,
       fill: color.period
     },
     {
-      start: 8 * 60 + 30,
+      start: 9 * 60 + 30,
       long: 3,
       name: "",
       showName: false,
       fill: color.passing
     },
     {
-      start: 8 * 60 + 33,
+      start: 9 * 60 + 33,
       long: 60,
       name: "P2",
       showName: true,
       fill: color.period
     },
     {
-      start: 9 * 60 + 33,
-      long: 15,
+      start: 10 * 60 + 33,
+      long: 21,
       name: "snack",
       showName: false,
       fill: color.lunch
     },
     {
-      start: 9 * 60 + 48,
-      long: 3,
-      name: "",
-      showName: false,
-      fill: color.passing
-    },
-    {
-      start: 9 * 60 + 51,
+      start: 10 * 60 + 51,
       long: 60,
       name: "P3",
       showName: true,
       fill: color.period
     },
     {
-      start: 10 * 60 + 51,
+      start: 11 * 60 + 51,
       long: 3,
       name: "",
       showName: false,
       fill: color.passing
     },
     {
-      start: 10 * 60 + 54,
+      start: 11 * 60 + 54,
       long: 60,
       name: "P4",
       showName: true,
       fill: color.period
     },
     {
-      start: 11 * 60 + 54,
+      start: 12 * 60 + 54,
       long: 30,
       name: "lunch",
       showName: false,
       fill: color.lunch
     },
     {
-      start: 12 * 60 + 24,
-      long: 3,
-      name: "",
-      showName: false,
-      fill: color.passing
-    },
-    {
-      start: 12 * 60 + 27,
-      long: 60,
+      start: 12 * 60 + 1 * 60 + 24,
+      long: 63, //don't forget this period is 3 minutes longer
       name: "P5",
       showName: true,
       fill: color.period
     },
     {
-      start: 13 * 60 + 27,
+      start: 12 * 60 + 2 * 60 + 27,
       long: 3,
       name: "",
       showName: false,
       fill: color.passing
     },
     {
-      start: 13 * 60 + 30,
+      start: 12 * 60 + 2 * 60 + 30,
       long: 60,
       name: "P6",
       showName: true,
       fill: color.period
     },
     {
-      start: 14 * 60 + 30,
-      long: 9 * 60 + 30,
+      start: 12 * 60 + 3 * 60 + 30,
+      long: 8 * 60 + 30,
       name: "",
       showName: false,
       fill: color.passing
@@ -144,119 +130,105 @@ const schedule = {
   ],
   advisory: [{
       start: 0,
-      long: 7 * 60 + 30,
+      long: 8 * 60 + 30,
       name: "",
       showName: false,
       fill: color.passing
     },
     {
-      start: 7 * 60 + 30,
+      start: 8 * 60 + 30,
       long: 55,
       name: "P1",
       showName: true,
       fill: color.period
     },
     {
-      start: 8 * 60 + 25,
+      start: 9 * 60 + 25,
       long: 3,
       name: "",
       showName: false,
       fill: color.passing
     },
     {
-      start: 8 * 60 + 28,
+      start: 9 * 60 + 28,
       long: 55,
       name: "P2",
       showName: true,
       fill: color.period
     },
     {
-      start: 9 * 60 + 23,
-      long: 15,
+      start: 10 * 60 + 23,
+      long: 18,
       name: "snack",
       showName: false,
       fill: color.lunch
     },
     {
-      start: 9 * 60 + 38,
-      long: 3,
-      name: "",
-      showName: false,
-      fill: color.passing
-    },
-    {
-      start: 9 * 60 + 41,
+      start: 10 * 60 + 41,
       long: 26,
       name: "A",
       showName: true,
       fill: color.period
     },
     {
-      start: 10 * 60 + 07,
+      start: 11 * 60 + 07,
       long: 3,
       name: "",
       showName: false,
       fill: color.passing
     },
     {
-      start: 10 * 60 + 10,
+      start: 11 * 60 + 10,
       long: 55,
       name: "P3",
       showName: true,
       fill: color.period
     },
     {
-      start: 11 * 60 + 5,
+      start: 12 * 60 + 5,
       long: 3,
       name: "",
       showName: false,
       fill: color.passing
     },
     {
-      start: 11 * 60 + 8,
+      start: 12 * 60 + 8,
       long: 55,
       name: "P4",
       showName: true,
       fill: color.period
     },
     {
-      start: 12 * 60 + 03,
-      long: 27,
+      start: 12 * 60 + 1 * 60 + 03,
+      long: 30,
       name: "lunch",
       showName: false,
       fill: color.lunch
     },
     {
-      start: 12 * 60 + 30,
-      long: 3,
-      name: "",
-      showName: false,
-      fill: color.passing
-    },
-    {
-      start: 12 * 60 + 33,
+      start: 12 * 60 + 1 * 60 + 33,
       long: 58,
       name: "P5",
       showName: true,
       fill: color.period
     },
     {
-      start: 13 * 60 + 31,
+      start: 12 * 60 + 2 * 60 + 31,
       long: 3,
       name: "",
       showName: false,
       fill: color.passing
     },
     {
-      start: 13 * 60 + 34,
+      start: 12 * 60 + 2 * 60 + 34,
       long: 56,
       name: "P6",
       showName: true,
       fill: color.period
     },
     {
-      start: 14 * 60 + 30,
-      long: 9 * 60 + 30,
+      start: 12 * 60 + 3 * 60 + 30,
+      long: 8 * 60 + 30,
       name: "",
       showName: false,
       fill: color.passing
@@ -264,118 +236,444 @@ const schedule = {
   ],
   rally: [{
       start: 0,
-      long: 7 * 60 + 30,
+      long: 9 * 60 + 30,
       name: "",
       showName: false,
       fill: color.passing
     },
     {
-      start: 7 * 60 + 30,
+      start: 8 * 60 + 30,
       long: 50,
       name: "P1",
       showName: true,
       fill: color.period
     },
     {
-      start: 8 * 60 + 20,
+      start: 9 * 60 + 20,
       long: 3,
       name: "",
       showName: false,
       fill: color.passing
     },
     {
-      start: 8 * 60 + 23,
+      start: 9 * 60 + 23,
       long: 50,
       name: "P2",
       showName: true,
       fill: color.period
     },
     {
-      start: 9 * 60 + 13,
-      long: 15,
+      start: 10 * 60 + 13,
+      long: 18,
       name: "snack",
       showName: false,
       fill: color.lunch
     },
     {
-      start: 9 * 60 + 28,
-      long: 3,
-      name: "",
-      showName: false,
-      fill: color.passing
-    },
-    {
-      start: 9 * 60 + 31,
+      start: 10 * 60 + 31,
       long: 50,
       name: "P3",
       showName: true,
       fill: color.period
     },
     {
-      start: 10 * 60 + 21,
+      start: 11 * 60 + 21,
       long: 3,
       name: "",
       showName: false,
       fill: color.passing
     },
     {
-      start: 10 * 60 + 24,
+      start: 11 * 60 + 24,
       long: 50,
       name: "P4",
       showName: true,
       fill: color.period
     },
     {
-      start: 11 * 60 + 14,
-      long: 30,
+      start: 12 * 60 + 14,
+      long: 33,
       name: "lunch",
       showName: false,
       fill: color.lunch
     },
     {
-      start: 11 * 60 + 44,
-      long: 3,
-      name: "",
-      showName: false,
-      fill: color.passing
-    },
-    {
-      start: 11 * 60 + 47,
+      start: 12 * 60 + 47,
       long: 50,
       name: "P5",
       showName: true,
       fill: color.period
     },
     {
-      start: 12 * 60 + 37,
+      start: 13 * 60 + 37,
       long: 3,
       name: "",
       showName: false,
       fill: color.passing
     },
     {
-      start: 12 * 60 + 40,
+      start: 13 * 60 + 40,
       long: 50,
       name: "P6",
       showName: true,
       fill: color.period
     },
     {
-      start: 13 * 60 + 30,
+      start: 14 * 60 + 30,
       long: 60,
       name: "Rally",
       showName: true,
       fill: color.period
     },
     {
-      start: 14 * 60 + 30,
-      long: 9 * 60 + 30,
+      start: 15 * 60 + 30,
+      long: 8 * 60 + 30,
       name: "",
       showName: false,
       fill: color.passing
     }
   ]
 };
+//   regular: [{
+//       start: 0,
+//       long: 7 * 60 + 30,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 7 * 60 + 30,
+//       long: 60,
+//       name: "P1",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 8 * 60 + 30,
+//       long: 3,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 8 * 60 + 33,
+//       long: 60,
+//       name: "P2",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 9 * 60 + 33,
+//       long: 15,
+//       name: "snack",
+//       showName: false,
+//       fill: color.lunch
+//     },
+//     {
+//       start: 9 * 60 + 48,
+//       long: 3,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 9 * 60 + 51,
+//       long: 60,
+//       name: "P3",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 10 * 60 + 51,
+//       long: 3,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 10 * 60 + 54,
+//       long: 60,
+//       name: "P4",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 11 * 60 + 54,
+//       long: 30,
+//       name: "lunch",
+//       showName: false,
+//       fill: color.lunch
+//     },
+//     {
+//       start: 12 * 60 + 24,
+//       long: 3,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 12 * 60 + 27,
+//       long: 60,
+//       name: "P5",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 13 * 60 + 27,
+//       long: 3,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 13 * 60 + 30,
+//       long: 60,
+//       name: "P6",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 14 * 60 + 30,
+//       long: 9 * 60 + 30,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     }
+//   ],
+//   advisory: [{
+//       start: 0,
+//       long: 7 * 60 + 30,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 7 * 60 + 30,
+//       long: 55,
+//       name: "P1",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 8 * 60 + 25,
+//       long: 3,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 8 * 60 + 28,
+//       long: 55,
+//       name: "P2",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 9 * 60 + 23,
+//       long: 15,
+//       name: "snack",
+//       showName: false,
+//       fill: color.lunch
+//     },
+//     {
+//       start: 9 * 60 + 38,
+//       long: 3,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 9 * 60 + 41,
+//       long: 26,
+//       name: "A",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 10 * 60 + 07,
+//       long: 3,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 10 * 60 + 10,
+//       long: 55,
+//       name: "P3",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 11 * 60 + 5,
+//       long: 3,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 11 * 60 + 8,
+//       long: 55,
+//       name: "P4",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 12 * 60 + 03,
+//       long: 27,
+//       name: "lunch",
+//       showName: false,
+//       fill: color.lunch
+//     },
+//     {
+//       start: 12 * 60 + 30,
+//       long: 3,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 12 * 60 + 33,
+//       long: 58,
+//       name: "P5",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 13 * 60 + 31,
+//       long: 3,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 13 * 60 + 34,
+//       long: 56,
+//       name: "P6",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 14 * 60 + 30,
+//       long: 9 * 60 + 30,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     }
+//   ],
+//   rally: [{
+//       start: 0,
+//       long: 7 * 60 + 30,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 7 * 60 + 30,
+//       long: 50,
+//       name: "P1",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 8 * 60 + 20,
+//       long: 3,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 8 * 60 + 23,
+//       long: 50,
+//       name: "P2",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 9 * 60 + 13,
+//       long: 15,
+//       name: "snack",
+//       showName: false,
+//       fill: color.lunch
+//     },
+//     {
+//       start: 9 * 60 + 28,
+//       long: 3,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 9 * 60 + 31,
+//       long: 50,
+//       name: "P3",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 10 * 60 + 21,
+//       long: 3,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 10 * 60 + 24,
+//       long: 50,
+//       name: "P4",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 11 * 60 + 14,
+//       long: 30,
+//       name: "lunch",
+//       showName: false,
+//       fill: color.lunch
+//     },
+//     {
+//       start: 11 * 60 + 44,
+//       long: 3,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 11 * 60 + 47,
+//       long: 50,
+//       name: "P5",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 12 * 60 + 37,
+//       long: 3,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     },
+//     {
+//       start: 12 * 60 + 40,
+//       long: 50,
+//       name: "P6",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 13 * 60 + 30,
+//       long: 60,
+//       name: "Rally",
+//       showName: true,
+//       fill: color.period
+//     },
+//     {
+//       start: 14 * 60 + 30,
+//       long: 9 * 60 + 30,
+//       name: "",
+//       showName: false,
+//       fill: color.passing
+//     }
+//   ]
+// };
 
 function toggleMode() {
   timeMode++;
@@ -505,7 +803,7 @@ function moveSVGPeriods(b) {
     document.getElementById("period-zone").setAttribute("transform", "translate(" + (100 - (todayMinutes - startMinutes) * scale) + ",77)");
     // document.getElementById("period-zone").setAttribute("transform", "translate(" + (50 - (todayMinutes - startMinutes) * scale) + ",77)");
   } else {
-    document.getElementById("period-zone").setAttribute("transform", "translate(0,77)");
+    document.getElementById("period-zone").setAttribute("transform", "translate(-27,77)");
   }
   //schedule title
   document.getElementById("schedule").textContent = schedule.current + " schedule";
